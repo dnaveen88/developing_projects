@@ -1,0 +1,15 @@
+create folder
+create project inside folder
+create files or projects inside folder
+do git clone using below command
+git clone https://github.com/dnaveen88/developing_projects.git
+git checkout -b "branch_name"
+git status
+git branch
+git add filename
+git status
+git commit -m "write comments"
+git push orighn branch_name
+
+
+
