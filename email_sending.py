@@ -1,3 +1,22 @@
+##settings file configuration for email sending:
+import datetime as dt
+OTP_TIMEOUT = dt.timedelta(seconds=30)
+
+EMAIL_USE_TLS = True
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'email-smtp.ap-south-1.amazonaws.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'AKIAVMPFPHJYWBUHYCOD'
+EMAIL_HOST_PASSWORD = 'BIoMttdmqf4qf56F3KJqBsIbxE0gYxmyZRSuGxs/rsTK'
+DEFAULT_FROM_EMAIL = 'donotreply@mindlogicx.com'
+TERMS_BASE_TEMPLATE = 'legal_base.html'
+
+    
+
+
+
+
+
 from django.core import mail
 
 class EmailSending(APIView):
